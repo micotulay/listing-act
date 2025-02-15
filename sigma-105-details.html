@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+            margin: 0;
+            padding: 20px;
+        }
+        .product-detail {
+            background: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            max-width: 500px;
+        }
+        .product-detail img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-detail h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .product-detail p {
+            font-size: 16px;
+            color: #666;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4A90E2;
+        }
+        .availability {
+            font-weight: bold;
+        }
+        .in-stock { color: green; }
+        .out-stock { color: red; }
+        .limited-stock { color: orange; }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #4A90E2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .buy-btn:hover {
+            background: #357ABD;
+        }
+        ul {
+            text-align: left;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-detail">
+        <img src="images/lens.png" alt="Nikon-85">
+        <h1>Sigma 105mm F1.4 DG HSM Art for F(FX) Mount</h1>
+        <p class="price">₱100,000</p>
+        <p class="availability in-stock">In Stock</p>
+        <ul>
+            <li>Max Format: 35mm FF</li>
+            <li>Nikon F (FX) Mount</li>
+            <li>Weather-sealed</li>
+            <li>Filter Thread: 105mm</li>
+            <li>Weight: 1,645g / 3.62 lb</li>
+            <li>Dimensions(øxL): 116mm x 132mm</li>
+            <li>9 Diaphragm Blades for Smooth Bokeh</li>
+        </ul>
+        <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+        }
+        .product-card {
+            background: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-card h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product-card p {
+            font-size: 16px;
+            color: #666;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4A90E2;
+        }
+        .availability {
+            font-weight: bold;
+        }
+        .in-stock { color: green; }
+        .out-stock { color: red; }
+        .limited-stock { color: orange; }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #4A90E2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .buy-btn:hover {
+            background: #357ABD;
+        }
+    </style>
+</head>
+<body>
+    <h1>Camera Shop</h1>
+    <div class="product-container">
+        <a href="nikon-z9-details.html" class="product-card">
+            <img src="images/camera.png" alt="Nikon-z9">
+            <h2>Nikon z9</h2>
+            <p class="price">₱346,900</p>
+            <p class="availability in-stock">In Stock</p>
+        </a>
+        <a href="nikon-85-details.html" class="product-card">
+            <img src="images/lens.png" alt="Nikon-85">
+            <h2>Nikon 85mm f/1.2s</h2>
+            <p class="price">₱174,900</p>
+            <p class="availability in-stock">In Stock</p>
+        </a>
+        <a href="sigma-105-details.html" class="product-card">
+            <img src="images/lens2.png" alt="Sigma-105">
+            <h2>Sigma 105mm F1.4 DG HSM Art for F(FX) Mount</h2>
+            <p class="price">₱100,000</p>
+            <p class="availability in-stock">Out of stock</p>
+        </a>
+        <a href="nikon-z6III-details.html" class="product-card">
+            <img src="images/camera2.png" alt="Nikon-z6 III">
+            <h2>Nikon z6 III</h2>
+            <p class="price">₱156,900</p>
+            <p class="availability in-stock">Limited stock</p>
+        </a>
+    </div>
+</body>
+</html>
